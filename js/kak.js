@@ -94,9 +94,9 @@ function registerListeners() {
         }
         return false;
     });
-    
 
-    $('#about img#dave').dblclick(function() {
+
+    $('#about img').dblclick(function() {
         festa();
     });
 }
@@ -108,34 +108,34 @@ function validateAspForm() {
     var validForm = true;
 
     if (!name) {
-        var l = 10;  
-        for( var i = 0; i < 10; i++ ) {  
-            $('#aspName').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        var l = 10;
+        for( var i = 0; i < 10; i++ ) {
+            $('#aspName').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
         }
         validForm = false;
     }
 
     if (!email) {
-        var l = 10;  
-        for( var i = 0; i < 10; i++ ) {  
-            $('#aspEmail').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        var l = 10;
+        for( var i = 0; i < 10; i++ ) {
+            $('#aspEmail').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
         }
         validForm = false;
     } else {
         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
         if (!re.test(email)) {
-            var l = 10;  
-            for( var i = 0; i < 10; i++ ) {  
-                $('#aspEmail').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+            var l = 10;
+            for( var i = 0; i < 10; i++ ) {
+                $('#aspEmail').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
             }
             validForm = false;
         }
     }
 
     if (!tel) {
-        var l = 10;  
-        for( var i = 0; i < 10; i++ ) {  
-            $('#aspTel').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        var l = 10;
+        for( var i = 0; i < 10; i++ ) {
+            $('#aspTel').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
         }
         validForm = false;
     }
@@ -148,41 +148,38 @@ function validateContactForm() {
     var email = $('#email-field').val();
     var message = $('#message-field').val();
     var validForm = true;
-    
+
     if (!name) {
-        var l = 10;  
-        for( var i = 0; i < 10; i++ ) {  
-            $('#name-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        var l = 10;
+        for( var i = 0; i < 10; i++ ) {
+            $('#name-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
         }
         validForm = false;
     }
-    
+
     if (!email) {
-        var l = 10;  
-        for( var i = 0; i < 10; i++ ) {  
-            $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        var l = 10;
+        for( var i = 0; i < 10; i++ ) {
+            $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
         }
         validForm = false;
     } else {
         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
         if (!re.test(email)) {
-            var l = 10;  
-            for( var i = 0; i < 10; i++ ) {  
-                $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+            var l = 10;
+            for( var i = 0; i < 10; i++ ) {
+                $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
             }
             validForm = false;
         }
     }
-    
+
     if (!message) {
-        var l = 10;  
-        for( var i = 0; i < 10; i++ ) {  
-            $('#message-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        var l = 10;
+        for( var i = 0; i < 10; i++ ) {
+            $('#message-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35);
         }
         validForm = false;
     }
     return validForm;
 }
-
-
-

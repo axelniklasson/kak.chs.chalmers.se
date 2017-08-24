@@ -11,13 +11,13 @@
 
             <div class="col-md-3">
                 <div class="logo text-center">
-                    <img src="img/logo.png">
+                    <img src="<?php the_field('logo_kak'); ?>">
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="logo text-center">
-                    <img src="img/chs/chs_logo.gif">
+                    <img src="<?php the_field('logo_chs'); ?>">
                 </div>
             </div>
 
@@ -52,20 +52,9 @@
 <!-- Custom KaK JavaScript -->
 <script src="<?php echo get_template_directory_uri() . '/js/kak.js'; ?>"></script>
 
-<!-- Elevator JavaScript -->
-<script src="<?php echo get_template_directory_uri() . '/js/elevator.min.js'; ?>"></script>
-<script>
-    window.onload = function() {
-        var elevator = new Elevator({
-            element: document.querySelector('.elevator-button'),
-            mainAudio: 'audio/elevator.mp3',
-            endAudio: 'audio/ding.mp3'
-        });
-    }
-</script>
-
-<!-- Fest! -->
-<script src="<?php echo get_template_directory_uri() . '/js/fest.js'; ?>"></script>
+<?php
+initializeElevator();
+initializeFest(); ?>
 
 
 </body>
