@@ -119,34 +119,6 @@ aside {
     background-color: transparent;
 }
 
-#aspForm {
-    width: 100%;
-    margin: auto;
-}
-
-#aspForm input {
-    width: 100%;
-    margin: 2px auto;
-    height: 40px;
-    font-size: 125%;
-    color: #A29593;
-    padding-left: 5px;
-}
-
-#aspForm #success-message {
-    display: none;
-}
-
-#aspForm button {
-    width: 100%;
-    margin: 2px auto;
-    height: 40px;
-    font-size: 125%;
-    color: #A29593;
-    background: white;
-    border: none;
-}
-
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -582,8 +554,8 @@ body {
 	width: auto;
 }
 
-.contact-form input,
-.contact-form textarea {
+form input,
+form textarea {
     width: 100%;
     margin: auto;
     height: 50px;
@@ -605,7 +577,7 @@ body {
     display: none;
 }
 
-.contact-form button {
+form button {
     width: 50%;
     margin: auto;
     height: 50px;
@@ -613,6 +585,25 @@ body {
     color: #8F76AA;
     border: none;
     font-size: 120%;
+}
+
+#aspForm {
+    width: 100%;
+    margin: auto;
+}
+
+#aspForm input {
+    color: #A29593;
+}
+
+#aspForm #success-message {
+    display: none;
+}
+
+#aspForm button {
+    color: #A29593;
+    background: white;
+    border: none;
 }
 
 #facilities .wrapper {

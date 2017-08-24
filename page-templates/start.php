@@ -108,11 +108,10 @@ render_splash(); ?>
                     <p>Vi har löpande aspning i KåK och ifall du är intresserad av att veta mer eller redan nu vet med dig att du
                         vill aspa är det bara att skriva upp sig i formuläret nedan så återkommer vi så snart vi kan.</p>
 
-                    <h4>Aspformulär</h4>
                     <form id="aspForm">
-                        <input id="aspName" type"text" placeholder="Namn"></input>
-                        <input id="aspEmail" type"email" placeholder="E-post"></input>
-                        <input id="aspTel" type"tel" placeholder="Telefonnummer"></input>
+                        <input id="aspName" type"text" placeholder="Namn *"></input>
+                        <input id="aspEmail" type"email" placeholder="E-post *"></input>
+                        <input id="aspTel" type"tel" placeholder="Telefonnummer *"></input>
                         <p id="success-message">Kul att du vill aspa! Vi hör av oss snart!</p>
                         <button type="submit">Skriv upp mig!</button>
                     </form>
@@ -136,9 +135,9 @@ render_splash(); ?>
                 <h2 class="section-heading">Hör av er!</h2>
                 <hr class="light">
                 <form class="contact-form" method="get" novalidate>
-                    <input name="name" type="text" placeholder="Namn" id="name-field"><br>
-                    <input name="email" type="email" placeholder="Email" id="email-field"><br>
-                    <textarea name="message" placeholder="Meddelande" id="message-field"></textarea><br>
+                    <input name="name" type="text" placeholder="Namn *" id="name-field"><br>
+                    <input name="email" type="email" placeholder="Email *" id="email-field"><br>
+                    <textarea name="message" placeholder="Meddelande *" id="message-field"></textarea><br>
                     <p id="success-message">Meddelandet skickades! Vi hör av oss så snart vi kan!</p>
                     <button type="submit">Skicka</button>
                 </form>
