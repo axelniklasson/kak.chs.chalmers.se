@@ -1,4 +1,4 @@
 # kak.chs.chalmers.se
-Hemsida för Kårhuskommittén KåK. Vi gör vettiga saker.
+Wordpress-hemsida för Kårhuskommittén KåK.
 
-Det är gött nu
+Ändringar i temat deployas automatiskt till Plesken från master, men ändringar i ACF eller i plugins kräver manuell deploy via FTP.

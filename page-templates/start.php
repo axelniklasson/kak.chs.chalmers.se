@@ -41,7 +41,7 @@ render_splash(); ?>
         </div>
 
         <?php
-        $args = array( 'post_type' => 'venues', 'posts_per_page' => 2 );
+        $args = array( 'post_type' => 'venues', 'posts_per_page' => 2, 'orderby' => 'menu_order', 'order' => 'ASC' );
         $loop = new WP_Query( $args );
         $count = 0;
 
@@ -84,11 +84,11 @@ render_splash(); ?>
         </div>
         <div class="row">
             <?php
-            $args = array( 'post_type' => 'members', 'posts_per_page' => 10 );
+            $args = array( 'post_type' => 'members', 'posts_per_page' => 10, 'orderby' => 'menu_order', 'order' => 'ASC' );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="col-md-4 text-center wow fadeIn">
-                    <img id="angseus" class="img-circle " src="<?php the_field('picture'); ?>">
+                    <img class="img-circle " src="<?php the_field('picture'); ?>">
                     <h4><?php the_title(); ?></h4>
                     <h5><?php the_field('post'); ?></h5>
                 </div>

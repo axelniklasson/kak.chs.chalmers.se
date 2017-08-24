@@ -42,20 +42,15 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php echo get_template_directory_uri() . '/js/bootstrap.min.js'; ?>"></script>
 
-
 <!-- Plugin JavaScript -->
 <script src="<?php echo get_template_directory_uri() . '/js/jquery.easing.min.js'; ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/jquery.fittext.js'; ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/wow.min.js'; ?>"></script>
 
-
-<!-- Custom KaK JavaScript -->
-<script src="<?php echo get_template_directory_uri() . '/js/kak.js'; ?>"></script>
-
 <?php
 initializeElevator();
-initializeFest(); ?>
-
+initializeFest();
+injectKakJS(); ?>
 
 </body>
 
