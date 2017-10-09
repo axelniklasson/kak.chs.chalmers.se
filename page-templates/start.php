@@ -87,7 +87,7 @@ render_splash(); ?>
             $args = array( 'post_type' => 'members', 'posts_per_page' => 10, 'orderby' => 'menu_order', 'order' => 'ASC' );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <div class="col-md-4 text-center wow fadeIn">
+            <div class="col-md-4 text-center wow fadeIn <?php the_title() ?>">
                     <img class="img-circle " src="<?php the_field('picture'); ?>">
                     <h4><?php the_title(); ?></h4>
                     <h5><?php the_field('post'); ?></h5>

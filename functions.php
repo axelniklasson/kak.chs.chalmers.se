@@ -155,7 +155,7 @@ function injectKakJS() { ?>
         });
 
 
-        $('#about img').dblclick(function() {
+        $('#about .Dave img').dblclick(function() {
             festa();
         });
     }
